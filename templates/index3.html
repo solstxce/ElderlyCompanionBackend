@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Companion App</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #3a7bc8;
+        }
+        /* Hero section styles */
+        .hero {
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 4rem 0;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        .hero-image {
+            flex: 1;
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        /* Stats section styles */
+        .stats {
+            background-color: #fff;
+            padding: 4rem 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .stat-card {
+            background-color: #f0f7ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+        /* Features section styles */
+        .features {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: #4a90e2;
+            margin-bottom: 1rem;
+        }
+        /* Chart section styles */
+        .chart {
+            background-color: #fff;
+            padding: 4rem 0;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* Testimonials section styles */
+        .testimonials {
+            background-color: #f0f7ff;
+            padding: 4rem 0;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .testimonial-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stars {
+            color: #ffd700;
+            margin-bottom: 1rem;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .footer-links a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+        .footer-subscribe input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            .hero-text, .hero-image {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">ElderlyCompanion</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Companionship and Care at Your Fingertips</h1>
+                    <p>Our AI-powered app provides 24/7 support, medication reminders, and friendly conversation for seniors.</p>
+                    <a href="#" class="btn">Start Free Trial</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://img.freepik.com/premium-vector/online-medical-service-concept-illustration-healthcare-websites-apps_347450522.jpg" alt="Elderly person using a tablet with caregiver">
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <h2>Our Impact</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4,230+</div>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12,580</div>
+                        <p>Medication Reminders Sent</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">9,850</div>
+                        <p>Conversations Handled</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chart">
+            <div class="container">
+                <h2>User Growth</h2>
+                <div class="chart-container">
+                    <!-- Simple CSS-based chart representation -->
+                    <div style="display: flex; justify-content: space-between; align-items: flex-end; height: 200px;">
+                        <div style="width: 30px; background-color: #4a90e2; height: 40%;"></div>
+                        <div style="width: 30px; background-color: #4a90e2; height: 50%;"></div>
+                        <div style="width: 30px; background-color: #4a90e2; height: 60%;"></div>
+                        <div style="width: 30px; background-color: #4a90e2; height: 70%;"></div>
+                        <div style="width: 30px; background-color: #4a90e2; height: 80%;"></div>
+                        <div style="width: 30px; background-color: #4a90e2; height: 100%;"></div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                        <span>Jan</span>
+                        <span>Feb</span>
+                        <span>Mar</span>
+                        <span>Apr</span>
+                        <span>May</span>
+                        <span>Jun</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>24/7 Companionship</h3>
+                        <p>Always available for a friendly chat or to provide support.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h3>Medication Reminders</h3>
+                        <p>Never miss a dose with our smart reminder system.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📅</div>
+                        <h3>Appointment Scheduling</h3>
+                        <p>Keep track of doctor visits and social engagements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❤️</div>
+                        <h3>Health Monitoring</h3>
+                        <p>Track vital signs and get personalized health tips.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What Our Users Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"This app has been a blessing. It helps me remember my medications and provides great company."</p>
+                        <p><strong>- Jane D., 78</strong></p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"I feel more connected to my family with the easy video call feature. It's simple to use!"</p>
+                        <p><strong>- Robert S., 82</strong></p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The health tips are so helpful. I've improved my diet and feel more energetic."</p>
+                        <p><strong>- Margaret L., 75</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3>ElderlyCompanion</h3>
+                <p>Providing care and support to seniors through innovative technology.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">About Us</a>
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-subscribe">
+                <h4>Stay Connected</h4>
+                <p>Subscribe to our newsletter for updates and tips.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 2rem;">
+            <p>&copy; 2023 ElderlyCompanion. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

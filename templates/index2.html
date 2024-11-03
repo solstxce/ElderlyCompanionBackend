@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Companion App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl font-bold">Elderly Companion App</h1>
+            <p class="mt-2 text-lg">Providing companionship and assistance to seniors with advanced AI.</p>
+            <div class="mt-6">
+                <button class="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="container mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+        <!-- Card 1: Active Users -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-600">Active Users</h3>
+            <p class="text-3xl font-bold mt-2">4,230</p>
+            <span class="bg-green-200 text-green-800 px-2 py-1 text-sm rounded-full">+2% from last week</span>
+        </div>
+        <!-- Card 2: Medication Reminders Sent -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-600">Medication Reminders Sent</h3>
+            <p class="text-3xl font-bold mt-2">12,580</p>
+            <span class="bg-yellow-200 text-yellow-800 px-2 py-1 text-sm rounded-full">+5% from last month</span>
+        </div>
+        <!-- Card 3: Conversations Handled -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-600">Conversations Handled</h3>
+            <p class="text-3xl font-bold mt-2">9,850</p>
+            <span class="bg-red-200 text-red-800 px-2 py-1 text-sm rounded-full">-1% from last month</span>
+        </div>
+    </section>
+
+    <!-- Graph Section (Placeholder for charts) -->
+    <section class="container mx-auto my-12 px-4">
+        <h2 class="text-2xl font-bold mb-4">Usage Statistics</h2>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <!-- Placeholder for a graph (Add a graph library or static image here) -->
+            <img src="https://via.placeholder.com/600x300" alt="Graph" class="w-full h-auto rounded-lg">
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot" class="fixed bottom-4 right-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg w-80">
+        <div class="p-4 bg-blue-600 text-white rounded-t-lg">
+            <h4 class="font-semibold">Chat with Us</h4>
+        </div>
+        <div id="chatbox" class="p-4 h-60 overflow-y-scroll">
+            <div id="messages"></div>
+        </div>
+        <div class="p-4 border-t dark:border-gray-600 flex items-center">
+            <input type="text" id="user_input" class="flex-1 p-2 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 text-gray-800 dark:text-gray-100" placeholder="Type a message...">
+            <button id="send_btn" class="ml-2 bg-blue-600 text-white px-4 py-2 rounded-lg">Send</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Chatbot Functionality -->
+    <script>
+        // Function to show messages in the chatbot UI
+        function showMessage(role, message) {
+            const messagesDiv = document.getElementById('messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `p-2 my-1 rounded-lg ${role === 'user' ? 'bg-gray-200 text-gray-800' : 'bg-blue-600 text-white'}`;
+            messageDiv.textContent = `${role === 'user' ? 'You' : 'Companion'}: ${message}`;
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Send button functionality
+        document.getElementById('send_btn').onclick = function() {
+            const user_input = document.getElementById('user_input').value;
+            if (!user_input) return;
+            
+            // Display user message
+            showMessage('user', user_input);
+
+            // Check for keywords
+            const keywords = ["morning", "afternoon", "evening"];
+            const detectedKeyword = keywords.find(keyword => user_input.toLowerCase().includes(keyword));
+
+            if (detectedKeyword) {
+                fetch('/medication_schedule')
+                .then(response => response.json())
+                .then(schedule => {
+                    let scheduleDetails = `Schedule for ${detectedKeyword.charAt(0).toUpperCase() + detectedKeyword.slice(1)}:\n`;
+                    schedule.schedule[detectedKeyword].medications.forEach(med => {
+                        scheduleDetails += `\n• ${med.name} - ${med.dosage}: ${med.instructions}`;
+                    });
+                    showMessage('companion', scheduleDetails);
+                });
+            } else {
+                // Fetch response from backend for other messages
+                fetch('/chat', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    body: 'message=' + encodeURIComponent(user_input)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    showMessage('companion', data.response);
+                });
+            }
+
+            // Clear input
+            document.getElementById('user_input').value = '';
+        };
+    </script>
+</body>
+</html>

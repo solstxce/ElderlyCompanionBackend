@@ -1,0 +1,55 @@
+2024-11-02 16:34:13,288 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-02 16:34:13,288 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-02 16:34:13,318 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-11-02 16:34:13,601 - werkzeug - WARNING -  * Debugger is active!
+2024-11-02 16:34:13,605 - werkzeug - INFO -  * Debugger PIN: 117-565-203
+2024-11-02 16:34:19,933 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:34:19] code 400, message Bad request version ('\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-11-02 16:34:19,934 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:34:19] "[35m[1m\x16\x03\x01\x07]\x01\x00\x07Y\x03\x03\x15ò/1\x05 \x96r]Ë\\X\x09S8j\x82÷à\x1b\x09\x19QîK¡Ò\x05À\x8eôé oa\x90ÁÆfünË\x96òJS¦ÞHÊÁ¡¼ÅÞ/\x1dh\x09Ûà ."\x0b\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:34:19,956 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:34:19] code 400, message Bad request version ('«\\¦FV\x97~$òêS¦\x8bÍæ\x84òÐ\'È¨"P\x02TN\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-11-02 16:34:19,956 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:34:19] "[35m[1m\x16\x03\x01\x02\x8c\x01\x00\x02\x88\x03\x03\x93\x06\x8d¢Ò\x19\x9e±J \x10Aç¦ÎøiSåB\x19\x9enÞW¡àz.²Rú íó\x80"ô\x0d«\\¦FV\x97~$òêS¦\x8bÍæ\x84òÐ'È¨"P\x02TN\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:34:46,368 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-02 16:34:46,368 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-02 16:34:46,393 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2024-11-02 16:34:46,906 - werkzeug - WARNING -  * Debugger is active!
+2024-11-02 16:34:46,913 - werkzeug - INFO -  * Debugger PIN: 117-565-203
+2024-11-02 16:34:53,187 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:34:53] code 400, message Bad request version ('!\x8fJß(ñJ\x83{øÒÒj²É\x03¤æ¿¾+g\x91©e\x80\x93')
+2024-11-02 16:34:53,188 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:34:53] "[35m[1m\x16\x03\x01\x07]\x01\x00\x07Y\x03\x03Çn»\x95IÉY9ø}Ú\x00\x98H\x17:¡BÙÿm<*\x18¼\x1b\x13w\x1fð¬\x12 !\x8fJß(ñJ\x83{øÒÒj²É\x03¤æ¿¾+g\x91©e\x80\x93[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:34:53,191 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:34:53] code 400, message Bad request version ('øVÁk(¿')
+2024-11-02 16:34:53,191 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:34:53] "[35m[1m\x16\x03\x01\x02\x8c\x01\x00\x02\x88\x03\x03\x00\x0b5|k·\x86NÖÍKë\x85øVÁk(¿ [0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:34:55,398 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:34:55] code 400, message Bad request syntax ('\x16\x03\x01\x07]\x01\x00\x07Y\x03\x03ÐRæÛ:moáb\x7féö\x8f\x96¹oS~\x1a\xad\x10æ')
+2024-11-02 16:34:55,398 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:34:55] "[35m[1m\x16\x03\x01\x07]\x01\x00\x07Y\x03\x03ÐRæÛ:moáb\x7féö\x8f\x96¹oS~\x1a­\x10æ[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:34:55,413 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:34:55] code 400, message Bad request version ('\x88==!Cûí1ü\x0e6ý\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-11-02 16:34:55,413 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:34:55] "[35m[1m\x16\x03\x01\x02\x8c\x01\x00\x02\x88\x03\x03ö\x1b'Ýìq\x070þÖØ\x90@*\x01\x9b\x0f+Æ@\x03µ\x00ä"¸òDË\x12(Ç Pk\x92o[ÌÓ\x03\x01×¯?\x7f©ªET\x7fE\x85\x88==!Cûí1ü\x0e6ý\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:34:58,841 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:34:58] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07]\x01\x00\x07Y\x03\x03j~S[\x9e\x0eb5;µsÎO6\x00ÅÅ?¢\x034üãºBÃµÿTC¦h')
+2024-11-02 16:34:58,841 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:34:58] "[35m[1m\x16\x03\x01\x07]\x01\x00\x07Y\x03\x03j~S[\x9e\x0eb5;µsÎO6\x00ÅÅ?¢\x034üãºBÃµÿTC¦h ÄB\x95ð\x8e\x9cþ3n#\x96d³éé®s²TW\x8b\x87j$f)ÞÝ1t\x1a\x82\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:34:58,857 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:34:58] code 400, message Bad request version ('^\x8d%°ý\x81,N\x0e/0\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-11-02 16:34:58,857 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:34:58] "[35m[1m\x16\x03\x01\x02\x8c\x01\x00\x02\x88\x03\x03ºMs§ù§èê%\x17D \x87$M{\x8eX3v\x8f@/\x98\x8bM\x84«"À!\x01 \x14aÔ{t\x1b\x03í\x12)m\x8d\x148\x85\x00\x8eæ\x19\x8f\x1e^\x8d%°ý\x81,N\x0e/0\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:35:01,091 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:35:01] code 400, message Bad request version ('vå\x9b4ð¦Ë@Ñ\x196æî\x83\x8c4f$\x16ÕB\x18\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-11-02 16:35:01,092 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:35:01] "[35m[1m\x16\x03\x01\x07]\x01\x00\x07Y\x03\x03«ð½\x040­\x03iÛEWo¶\x99¼¶%u\x91H\x1d°\x08\x95\x09¨2¾ò¿mÖ \x05õ²¶æ\x93\x96ÿÚ\x1fvå\x9b4ð¦Ë@Ñ\x196æî\x83\x8c4f$\x16ÕB\x18\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:35:01,114 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:35:01] code 400, message Bad request version ('\x03Ò$\x93ñ\x1a')
+2024-11-02 16:35:01,115 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:35:01] "[35m[1m\x16\x03\x01\x02\x8c\x01\x00\x02\x88\x03\x03°ûìzzÛM­µ§\x0d\x00%çûQÁ\x84c\x0d\x07e\x95\\\x18\x85\x03Ò$\x93ñ\x1a [0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:36:09,994 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:36:09] code 400, message Bad request version ('°Çã\x0e©_Ù«Ñ´÷QÔã\x99sZIb\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-11-02 16:36:09,996 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:09] "[35m[1m\x16\x03\x01\x07]\x01\x00\x07Y\x03\x038\x86Â\x05\x1cçô73=\x1eY\x91+\x17\x1c+\x9b¶zÒ&ãCZ\x83\x0f¶Úçï\x19 \x92\x18ÚßûâÖ\x0d@}\x9bô\x85°Çã\x0e©_Ù«Ñ´÷QÔã\x99sZIb\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:36:10,002 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:36:10] code 400, message Bad request syntax ('\x16\x03\x01\x02\x8c\x01\x00\x02\x88\x03\x03`\x99ªµ\x07¸Ò\x1a/')
+2024-11-02 16:36:10,002 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:10] "[35m[1m\x16\x03\x01\x02\x8c\x01\x00\x02\x88\x03\x03`\x99ªµ\x07¸Ò\x1a/[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:36:20,068 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:36:20] code 400, message Bad request version ('v<EïáDMÁ\x07<\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2024-11-02 16:36:20,069 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:20] "[35m[1m\x16\x03\x01\x07]\x01\x00\x07Y\x03\x03ûí\x85Þ@\x07½V-4Þ\x15\x01Ùk:p6\x8e÷\x92öñÆ\x09ªòc\x09tF5 UBÇ¥åì©ÿ,`>ST-\x98ÒBx\x06ý\x8f\x85v<EïáDMÁ\x07<\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:36:20,081 - werkzeug - ERROR - 127.0.0.1 - - [02/Nov/2024 16:36:20] code 400, message Bad request version ('\x08¤>ÞW¶\x91wT÷ü')
+2024-11-02 16:36:20,081 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:20] "[35m[1m\x16\x03\x01\x02\x8c\x01\x00\x02\x88\x03\x03ÄCK~qØ\x9cÅ\x91 \x83\x9c\x9a y_ÛæÝ£\x05\x0eÖmo{\x86ù\x10¤jP \x1ea¬*\x9bs\x0fÔe\x85\x08¤>ÞW¶\x91wT÷ü[0m" HTTPStatus.BAD_REQUEST -
+2024-11-02 16:36:43,412 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:43] "POST /chat HTTP/1.1" 200 -
+2024-11-02 16:36:49,223 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:49] "POST /chat HTTP/1.1" 200 -
+2024-11-02 16:36:53,554 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:53] "POST /chat HTTP/1.1" 200 -
+2024-11-02 16:36:56,368 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:56] "GET /remind HTTP/1.1" 200 -
+2024-11-02 16:36:58,745 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:58] "GET /remind HTTP/1.1" 200 -
+2024-11-02 16:36:59,631 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:36:59] "GET /remind HTTP/1.1" 200 -
+2024-11-02 16:38:43,982 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:38:43] "GET /medication_schedule HTTP/1.1" 200 -
+2024-11-02 16:38:44,259 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:38:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-02 16:48:30,235 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:48:30] "POST /chat HTTP/1.1" 200 -
+2024-11-02 16:48:36,535 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:48:36] "POST /chat HTTP/1.1" 200 -
+2024-11-02 16:48:41,184 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:48:41] "GET /medication_schedule HTTP/1.1" 200 -
+2024-11-02 16:48:41,246 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:48:41] "POST /chat HTTP/1.1" 200 -
+2024-11-02 16:48:46,855 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:48:46] "GET /medication_schedule HTTP/1.1" 200 -
+2024-11-02 16:48:46,955 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:48:46] "POST /chat HTTP/1.1" 200 -
+2024-11-02 16:58:09,931 - werkzeug - INFO - 127.0.0.1 - - [02/Nov/2024 16:58:09] "POST /chat HTTP/1.1" 200 -
